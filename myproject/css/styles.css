@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+}
+
+html{
+    min-width: 360px;
+    @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+    font-family: 'Spartan', sans-serif;
+    color: hsl(300, 43%, 22%);
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.header__title{
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header__subtitle{
+    text-align: center;
+    color: hsl(303, 10%, 53%);
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 95%;
+}
+
+.rates{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rated{
+    background-color: hsl(300, 24%, 96%);
+    margin-bottom: 10px;
+    height: 80px;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rated__star-container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rated__star{
+    background-image: url(/myproject/assets/images/icon-star.svg);
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rated__text{
+    font-weight: 700;
+    font-size: 90%;
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial{
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(300, 24%, 96%);
+    margin: 20px 35px;
+    border-radius: 10px;
+    height: 220px;
+    padding: 20px 30px;
+}
+
+.testimonial__header{
+    height: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testimonial__header img{
+    border-radius: 50%;
+    height: 45px;
+    margin-right: 20px;
+    
+}
+
+.testimonial__title{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 80%;
+}
+
+.testimonial__subtitle{
+    color: hsl(333, 80%, 67%);
+    font-weight: 500;
+    font-size: 80%;
+}
+
+.testimonial__text{
+    font-weight: 500;
+    font-size: 80%;
+    line-height: 25px;
+    height: 130px;
+}
+
+.attribution{
+    margin-top: 100px;
+}
