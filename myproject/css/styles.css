@@ -9,6 +9,30 @@ html{
     color: hsl(300, 43%, 22%);
 }
 
+@media screen and (min-width: 768px){
+    body{
+        max-width: 1440px;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 800px);
+    }
+}
+
+html::before{
+    content: url(/myproject/assets/images/bg-pattern-top-mobile.svg);
+    position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+    html::before{
+        content: url(/myproject/assets/images/bg-pattern-top-desktop.svg);
+        position: absolute;
+    }
+}
+
 .header{
     display: flex;
     flex-direction: column;
@@ -17,6 +41,12 @@ html{
     margin-top: 80px;
     margin-bottom: 40px;
 }
+
+@media screen and (min-width: 768px) {
+    .header{
+        text-align: left;
+    }
+}    
 
 .header__title{
     margin-bottom: 20px;
@@ -125,4 +155,5 @@ html{
 
 .attribution{
     margin-top: 100px;
+    margin-bottom: 5px;
 }
